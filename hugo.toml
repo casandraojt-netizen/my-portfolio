@@ -3,13 +3,19 @@ languageCode = 'en-us'
 title = 'Kent Casandra'
 theme = "PaperMod"
 
+# Add this block to force HTML generation
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
+
 [params]
     env = "production"
-    # This is the "Profile Mode" that adds the bio you see on the demo
+    # This enables the "landing page" style
     [params.homeInfoParams]
         Title = "Hi there! I'm Kent. 👋"
         Content = "SoftDev OJT at Callbox | Automation Specialist"
 
-    # This makes the "My New Hugo Site" at the top look better
-    [params.label]
-        text = "Kent Casandra"
+    # This makes the layout focus on your profile
+    [params.profileMode]
+        enabled = true
+        title = "Kent Casandra"
+        subtitle = "Software Development Trainee"
