@@ -1,4 +1,31 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kentcasandra-portfolio.vercel.app/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = "PaperMod" 
+title = 'Kent Casandra'
+theme = "PaperMod"
+
+[params]
+    env = "production"
+    title = "Kent Casandra"
+    description = "SoftDev OJT | Automation & SEO Specialist"
+    author = "Kent"
+    
+    # This creates the "Home Page" look with your bio
+    [params.homeInfoParams]
+        Title = "Hi there! I'm Kent. 👋"
+        Content = "Software Development Trainee at **Callbox, Inc.** specializing in **n8n automation**, SEO analytics, and Python development. I build tools that make workflows smarter."
+
+    # Social Icons
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/your-username"
+    [[params.socialIcons]]
+        name = "linkedin"
+        url = "https://linkedin.com/in/your-username"
+
+    # Navigation Bar
+    [menu]
+        [[menu.main]]
+            identifier = "posts"
+            name = "Projects"
+            url = "/posts/"
+            weight = 10
