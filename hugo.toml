@@ -5,27 +5,11 @@ theme = "PaperMod"
 
 [params]
     env = "production"
-    title = "Kent Casandra"
-    description = "SoftDev OJT | Automation & SEO Specialist"
-    author = "Kent"
-    
-    # This creates the "Home Page" look with your bio
+    # This is the "Profile Mode" that adds the bio you see on the demo
     [params.homeInfoParams]
         Title = "Hi there! I'm Kent. 👋"
-        Content = "Software Development Trainee at **Callbox, Inc.** specializing in **n8n automation**, SEO analytics, and Python development. I build tools that make workflows smarter."
+        Content = "SoftDev OJT at Callbox | Automation Specialist"
 
-    # Social Icons
-    [[params.socialIcons]]
-        name = "github"
-        url = "https://github.com/your-username"
-    [[params.socialIcons]]
-        name = "linkedin"
-        url = "https://linkedin.com/in/your-username"
-
-    # Navigation Bar
-    [menu]
-        [[menu.main]]
-            identifier = "posts"
-            name = "Projects"
-            url = "/posts/"
-            weight = 10
+    # This makes the "My New Hugo Site" at the top look better
+    [params.label]
+        text = "Kent Casandra"
