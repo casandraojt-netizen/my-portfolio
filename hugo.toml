@@ -3,19 +3,15 @@ languageCode = 'en-us'
 title = 'Kent Casandra'
 theme = "PaperMod"
 
-# This line is crucial to prevent the XML-only output
 [outputs]
-    home = ["HTML", "RSS", "JSON"]
+    home = ["HTML", "RSS"]
 
 [params]
     env = "production"
-    # Enable the professional landing page look
     [params.homeInfoParams]
-        Title = "Hi there! I'm Kent. 👋"
-        Content = "SoftDev OJT at Callbox | Automation Specialist"
-
-    # Enables the profile-centered layout
+        Title = "Hi there! I'm Kent."
+        Content = "SoftDev OJT at Callbox"
     [params.profileMode]
         enabled = true
         title = "Kent Casandra"
-        subtitle = "Software Development Trainee"
+        subtitle = "Automation Specialist"
