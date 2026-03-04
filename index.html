@@ -425,6 +425,7 @@
       50% { opacity: 0.4; }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
@@ -676,18 +677,18 @@
         <div class="contact-info">
           <p>I'm actively looking for developer roles in software engineering, automation, or AI integration. If you have an opportunity or just want to connect, reach out.</p>
           <ul class="contact-links">
-            <li><a href="mailto:kent.casandra@example.com"><span class="icon">✉</span> kent.casandra@example.com</a></li>
-            <li><a href="#"><span class="icon">📍</span> Iloilo City, Philippines</a></li>
-            <li><a href="#"><span class="icon">💼</span> LinkedIn</a></li>
-            <li><a href="#"><span class="icon">🐙</span> GitHub</a></li>
+            <li><a href="mailto:kentlucescasandra@gmail.com"><span class="icon"><i class="fa-solid fa-envelope"></i></span> kentlucescasandra@gmail.com</a></li>
+            <li><a href="#"><span class="icon"><i class="fa-solid fa-location-dot"></i></span> Iloilo City, Philippines</a></li>
+            <li><a href="https://www.linkedin.com/in/kent-casandra-a347b43a9/"><span class="icon"><i class="fa-brands fa-linkedin"></i></span> LinkedIn</a></li>
+            <li><a href="https://github.com/casandraojt-netizen"><span class="icon"><i class="fa-brands fa-github"></i></span> GitHub</a></li>
           </ul>
         </div>
-        <div class="contact-form">
-          <input type="text" placeholder="Your name" />
-          <input type="email" placeholder="Your email" />
-          <textarea placeholder="Your message"></textarea>
-          <button class="btn btn-primary">Send Message</button>
-        </div>
+        <form action="https://formspree.io/f/xpqjvppb" method="POST" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
       </div>
     </section>
 
@@ -696,9 +697,8 @@
   <footer>
     <span>© 2026 Kent Casandra</span>
     <div class="footer-links">
-      <a href="#">GitHub</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
+      <a href="https://github.com/casandraojt-netizen"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/kent-casandra-a347b43a9/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
   </footer>
 
