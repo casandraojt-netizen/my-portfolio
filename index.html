@@ -424,6 +424,24 @@
       0%, 100% { opacity: 1; }
       50% { opacity: 0.4; }
     }
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+    }
+    .hero-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 3px solid var(--rule);
+      object-fit: cover;
+      flex-shrink: 0;
+      background: var(--bg-2);
+    }
+    @media (max-width: 600px) {
+      .hero-content { flex-direction: column; gap: 1.5rem; }
+      .hero-photo { width: 120px; height: 120px; }
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
@@ -445,17 +463,22 @@
 
     <!-- HERO -->
     <section id="hero">
-      <div class="badge"><span class="badge-dot"></span> Open to opportunities</div>
-      <div class="hero-eyebrow">Software Developer · Iloilo, PH</div>
-      <h1 class="hero-title">
-        Building things that<br><em>work beautifully.</em>
-      </h1>
-      <p class="hero-sub">
-        I'm Kent Casandra — a CS graduate specializing in Python, Automation, AI integration, and full-stack development. I turn complex problems into clean, reliable solutions.
-      </p>
-      <div class="hero-ctas">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      <div class="hero-content">
+        <img src="YOUR_PHOTO.jpg" alt="Kent Casandra" class="hero-photo" />
+        <div>
+          <div class="badge"><span class="badge-dot"></span> Open to opportunities</div>
+          <div class="hero-eyebrow">Software Developer · Iloilo, PH</div>
+          <h1 class="hero-title">
+            Building things that<br><em>work beautifully.</em>
+          </h1>
+          <p class="hero-sub">
+            I'm Kent Casandra — a CS graduate specializing in Python automation, AI integration, and full-stack development. I turn complex problems into clean, reliable solutions.
+          </p>
+          <div class="hero-ctas">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+        </div>
       </div>
     </section>
 
