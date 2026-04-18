@@ -282,6 +282,21 @@
       border-radius: 2px;
       color: var(--ink-3);
     }
+    .project-links { display: flex; gap: 0.6rem; margin-top: 0.9rem; }
+    .project-link {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--ink-3);
+      border: 1px solid var(--rule);
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      transition: color 0.2s, border-color 0.2s;
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    .project-link:hover { color: var(--accent); border-color: var(--accent); }
 
     /* ── CERTIFICATIONS ── */
     .certs-list { list-style: none; display: grid; gap: 1px; background: var(--rule); border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
@@ -610,7 +625,7 @@
         </div>
 
         <div class="project-card">
-          <div class="project-img" style="background:#eef3f9; font-size:2.8rem;">⚙️</div>
+          <div class="project-img" style="background:#eef3f9; font-size:2.8rem;">🎙️</div>
           <div class="project-body">
             <div class="project-tag">Voice Agents · OJT Project</div>
             <div class="project-title">Voice Agents</div>
@@ -619,15 +634,25 @@
               <span>Python</span><span>AI Integration</span><span>Prompt Engineering</span>
             </div>
           </div>
-        </div>        
+        </div>
 
-        <div class="project-card" style="border-style: dashed; opacity: 0.6;">
-          <div class="project-img" style="background:#f6f6f6; font-size:2.8rem;">🔜</div>
+        <div class="project-card">
+          <div class="project-img" style="background:#f0f4ee; font-size:2.8rem;">📚</div>
           <div class="project-body">
-            <div class="project-tag">Coming Soon</div>
-            <div class="project-title">Next Project</div>
-            <p class="project-desc">More projects in progress. Stay tuned.</p>
-            <div class="project-stack"></div>
+            <div class="project-tag">Full-Stack · Personal Project</div>
+            <div class="project-title">Library Tracker</div>
+            <p class="project-desc">A desktop app for tracking physical books and web novel/manga collections. Features offline-first SQLite storage, optional PostgreSQL cloud sync, RSS chapter feeds, reading statistics, and forum search across Royal Road and SpaceBattles.</p>
+            <div class="project-stack">
+              <span>Electron</span><span>React</span><span>SQLite</span><span>PostgreSQL</span><span>Tailwind CSS</span><span>Vite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/casandraojt-netizen/kentcas-library-tracker" target="_blank" rel="noopener" class="project-link">
+                <i class="fa-brands fa-github"></i> Desktop
+              </a>
+              <a href="https://github.com/casandraojt-netizen/kentcas-library-tracker-android" target="_blank" rel="noopener" class="project-link">
+                <i class="fa-brands fa-android"></i> Android
+              </a>
+            </div>
           </div>
         </div>
 
@@ -680,18 +705,21 @@
       <div class="section-label">Testimonials</div>
       <h2>What people say</h2>
       <div class="testimonials-grid">
+
         <div class="testimonial-card">
-          <p class="testimonial-text">Kent consistently delivers well-documented, maintainable code. His ability to quickly pick up new tools and integrate them into our workflows made him an invaluable part of the team during his OJT.</p>
-          <div class="testimonial-author">Supervisor Name</div>
-          <div class="testimonial-role">Team Lead, Callbox Inc. — replace with real testimonial</div>
+          <p class="testimonial-text">It has been a pleasure having Kent with our Software Development team during his OJT. He started with n8n automation workflows and quickly transitioned into helping test and build voice AI agents. He consistently exceeded our expectations by learning fast, working independently, and delivering quality output. His curiosity, initiative, and strong work ethic would make him a valuable addition to any team.</p>
+          <div class="testimonial-author">Jaylord Vhan Fabor</div>
+          <div class="testimonial-role">OJT Supervisor, Callbox Iloilo — Software Development Team</div>
         </div>
+
         <div class="testimonial-card">
           <p class="testimonial-text">One of the most thoughtful project leads in our batch. Kent has a rare combination of technical skill and creative vision — evident in everything from his game project to his approach to problem-solving.</p>
           <div class="testimonial-author">Professor Name</div>
           <div class="testimonial-role">Faculty, Central Philippine University — replace with real testimonial</div>
         </div>
+
       </div>
-      <p style="font-size:0.78rem; color:var(--ink-3); margin-top:0.8rem;">* Replace placeholder quotes with real testimonials from colleagues, supervisors, or professors.</p>
+      <p style="font-size:0.78rem; color:var(--ink-3); margin-top:0.8rem;">* Replace remaining placeholder quote with a real testimonial from a colleague or professor.</p>
     </section>
 
     <!-- CONTACT -->
